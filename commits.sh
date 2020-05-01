@@ -11,7 +11,7 @@ do
     do
       mkdir $D
       cd $D
-      for i in {01..12}
+      for i in $(seq 1 $(( ( RANDOM % 10 )  + 1 )))
       do
         echo "$i on $M/$D/$Y" > commit.md
         export GIT_COMMITTER_DATE="$Y-$M-$D 12:$i:00"
