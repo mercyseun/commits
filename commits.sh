@@ -27,6 +27,5 @@ do
 done
 git push origin master
 git rm -rf 20**
-git rm -rf 19**
 git commit -am "cleanup"
 git push origin master
