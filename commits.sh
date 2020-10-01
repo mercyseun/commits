@@ -1,13 +1,18 @@
-# a million commits
-for Y in 2020
+echo "Enter year"
+read year
+
+echo "Enter month"
+read month
+
+for Y in $year
 do
   mkdir $Y
   cd $Y
-  for M in 07
+  for M in $month
   do
     mkdir $M
     cd $M
-    for D in {23..31}
+    for D in {01..31}
     do
       mkdir $D
       cd $D
