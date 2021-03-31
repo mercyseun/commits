@@ -12,7 +12,7 @@ do
   do
     mkdir $M
     cd $M
-    for D in {02..26}
+    for D in {01..31}
     do
       mkdir $D
       cd $D
