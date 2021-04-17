@@ -1,4 +1,4 @@
-for Y in {2003..2004}
+for Y in 2021
 do
   mkdir $Y
   cd $Y
