@@ -3,7 +3,7 @@ for Y in 2020
 do
   mkdir $Y
   cd $Y
-  for M in 06
+  for M in {07..12}
   do
     mkdir $M
     cd $M
@@ -11,7 +11,7 @@ do
     do
       mkdir $D
       cd $D
-      for i in $(seq 1 $(( ( RANDOM % 50 )  + 1 )))
+      for i in $(seq 1 $(( ( RANDOM % 59 )  + 1 )))
       do
         echo "$i on $M/$D/$Y" > commit.md
         export GIT_COMMITTER_DATE="$Y-$M-$D 12:$i:00"
