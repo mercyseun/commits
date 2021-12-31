@@ -1,4 +1,4 @@
-for Y in {2019..2025}
+for Y in {2019..2021}
 do
   mkdir $Y
   cd $Y
