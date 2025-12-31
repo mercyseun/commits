@@ -1,4 +1,4 @@
-for Y in {2001..2025}
+for Y in {2021..2025}
 do
   mkdir $Y
   cd $Y
@@ -10,7 +10,7 @@ do
     do
       mkdir $D
       cd $D
-      R=$(( ( RANDOM % 20 )  + 1 ))
+      R=$(( ( RANDOM % 30 )  + 1 ))
       for i in $(seq 1 $R)
       do
         echo "$i on $M/$D/$Y" > commit.md
